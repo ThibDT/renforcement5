@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Renforcement #5</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Partie 1: Interprétation de pseudo-code</h2>
+        <div class="alert alert-primary">
+            Dans ces exercices, comme en javascript, l'opérateur '+' correspond à l'addition ET la concaténation.
+            <br>Le signe ← signifie "prend la valeur".
+        </div>
+        <div class="row mb-5">
+            <h3>Exercice 1</h3>
+            <div class="col-12">
+                <p>
+                    <strong>Variables :</strong> a, b, c
+                    <strong>(integers)</strong>
+                    <br>d
+                    <strong>(array)</strong>
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    a ← 0
+                    <br>b ← 5
+                    <br>d ← [1, b, 50, 75]
+                    <br>c ← longueur de
+                    <strong>d</strong>
+                    <br>Tant que
+                    <strong>a</strong> est strictement inférieur à
+                    <strong>c</strong>
+                    <span class="indented">
+                        Si
+                        <strong>a</strong> est paire
+                        <span class="indented">
+                            ajouter dans
+                            <strong>d</strong> la valeur de
+                            <strong>a</strong> multipliée par 2
+                        </span>
+                        <br>incrémenter
+                        <strong>a</strong>
+                    </span>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">a</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1a">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">b</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1b">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">c</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1c">
+                    </div>
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">d</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex1d">
+                    </div>
+                    <button class="btn btn-primary mt-2" id="ex1sub">Valider</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <h3>Exercice 2</h3>
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    Attention aux espaces !
+                </div>
+                <p>
+                    <strong>Variables :</strong> a
+                    <strong>(array)</strong>
+                    <br>b (string)
+                </p>
+                <p>
+                    <strong>Début</strong>
+                </p>
+                <p class="indented">
+                    a ← ["Pierre", "Paul", "Jack"]
+                    <br>b ← "Bonjour "
+                    <br>Pour i de 0 à la longueur de a (exclus)
+                    <span class="indented">
+                        Si
+                        <strong>i</strong> est égal à la longueur de
+                        <strong>a</strong> - 1
+                        <span class="indented">
+                            b ← b + " et " + a[i]
+                        </span>
+                        Sinon
+                        <span class="indented">
+                            b ← b + a[i]
+                            <br>Si
+                            <strong>i</strong> est strictement inférieur à la longueur de
+                            <strong>a - 2</strong>
+                            <span class="indented">
+                                b ← b + ", "
+                            </span>
+                        </span>
+                    </span>
+                </p>
+                <p>
+                    <strong>Fin</strong>
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="form-inline">
+                    <div class="input-group mr-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">b</div>
+                        </div>
+                        <input type="text" class="form-control" id="ex2b">
+                    </div>
+                    <button class="btn btn-primary" id="ex2sub">Valider</button>
+                </div>
+            </div>
+        </div>
+        <a href="ex2.html" class="btn btn-success mb-5">Suite</a>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
